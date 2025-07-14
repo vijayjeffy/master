@@ -52,13 +52,13 @@ pipeline {
 
         stage('Stage 9') {
             steps {
-                echo 'Take care'
+                echo 'seen'
             }
         }
 
         stage('Stage 10') {
             steps {
-                echo 'Bye'
+                echo 'ok'
             }
         }
     }
@@ -68,14 +68,14 @@ pipeline {
             emailext(
                 subject: '✅ Jenkins Job Success',
                 body: 'The pipeline has completed successfully!',
-                to: 'aravindjenkin2@gmail.com'
+                to: 'vijayjaddu0@gmail.com'
             )
         }
         failure {
             emailext(
                 subject: '❌ Jenkins Job Failed',
                 body: 'The pipeline has failed!',
-                to: 'aravindjenkin2@gmail.com'
+                to: 'vijayjaddu0@gmail.com'
             )
         }
     }
